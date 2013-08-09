@@ -1,2 +1,5 @@
 *.class
 *.tokens
+.DS_Store
+Lab05.java
+Lab05Scanner.java

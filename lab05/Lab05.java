@@ -6,7 +6,7 @@ import laboratorios.lab05.scanner.Lab05Scanner;
 public class Lab05 {
     public static void main(String[] args) throws Exception{
         try{
-            Lab05Lexer lexer = new Lab05Lexer(new ANTLRFileStream(args[0]));
+            Lab05Scanner lexer = new Lab05Scanner(new ANTLRFileStream(args[0]));
             while (lexer.nextToken().getType() != Token.EOF);
         }catch(ArrayIndexOutOfBoundsException aiobe){
             System.err.println("Must provide a valid path to the filename with the tokens");
